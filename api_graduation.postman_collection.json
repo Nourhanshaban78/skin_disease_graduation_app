@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "1d151aae-1e33-4c76-8016-3cc0c6d775ac",
+		"name": "api_graduation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26304486"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "fristname",
+							"value": "omar",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "atef",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "male",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "omar atef",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "atef@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234567890",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "1234567890",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.1.6:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"6"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.6:8000/api/login?email=atef@gmail.com&password=1234567890",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"6"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "atef@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "1234567890"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTkyLjE2OC4xLjY6ODAwMC9hcGkvbG9naW4iLCJpYXQiOjE2Nzg3MDU1MzcsImV4cCI6MTY3ODcwOTEzNywibmJmIjoxNjc4NzA1NTM3LCJqdGkiOiJ2M2thdFhFWG1FWUpGb1NuIiwic3ViIjoiMTYiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.hmB1t2JKVKG59QR3JMrw8UUCuLd_5e-z4RQO8YnXGY0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://192.168.1.6:8000/api/profile",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"6"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "refresh",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.6:8000/api/refresh",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"6"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"refresh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTkyLjE2OC4xLjY6ODAwMC9hcGkvbG9naW4iLCJpYXQiOjE2Nzg3MDU1MzcsImV4cCI6MTY3ODcwOTEzNywibmJmIjoxNjc4NzA1NTM3LCJqdGkiOiJ2M2thdFhFWG1FWUpGb1NuIiwic3ViIjoiMTYiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.hmB1t2JKVKG59QR3JMrw8UUCuLd_5e-z4RQO8YnXGY0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://192.168.1.6:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"6"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://192.168.1.6:8000/",
+			"type": "string"
+		}
+	]
+}
