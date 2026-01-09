@@ -13,7 +13,7 @@ Communicating with doctors (chat-based)
 Integration with mobile or web applications (API only)
 
 ⚠️ This project focuses on the backend API only.
-
+______________________________________________________________________________________________________________________________________________________________________________________________
 🎯 Features
 
 Upload skin images for disease prediction
@@ -25,6 +25,7 @@ Disease search and information retrieval
 Doctor–patient communication endpoints
 
 Secure and scalable RESTful API design
+______________________________________________________________________________________________________________________________________________________________________________________________
 
 🛠️ Technologies Used
 Backend
@@ -54,12 +55,14 @@ Authentication & authorization
 Flutter (API consumer – mobile app)
 
 MySQL Database
+______________________________________________________________________________________________________________________________________________________________________________________________
 
 📂 Project Type
 
 Backend API only
 
 Designed to be consumed by mobile or web applications
+______________________________________________________________________________________________________________________________________________________________________________________________
 
 🧠 Skills Applied
 
@@ -74,6 +77,7 @@ API Development & Integration
 Image Processing Workflow
 
 Team Collaboration & Documentation
+______________________________________________________________________________________________________________________________________________________________________________________________
 
 📌 Use Case
 
@@ -84,3 +88,4 @@ Mobile health applications
 Medical diagnostic platforms
 
 Educational medical tools
+
